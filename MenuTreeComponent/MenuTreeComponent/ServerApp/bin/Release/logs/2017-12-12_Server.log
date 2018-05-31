@@ -1,0 +1,11 @@
+12.12.2017 22:30:32 THRD=1 :: *****
+Server started at port 49607
+12.12.2017 22:33:10 THRD=4 :: HandleContext: config
+12.12.2017 22:33:10 THRD=4 :: Exception: Error! Argument HttpMethod Expected: POST but was: GET
+12.12.2017 22:33:11 THRD=5 :: HandleContext: favicon.ico
+12.12.2017 22:33:11 THRD=5 :: Exception: Error! Argument HttpMethod Expected: POST but was: GET
+12.12.2017 22:33:14 THRD=5 :: HandleContext: favicon.ico
+12.12.2017 22:33:14 THRD=5 :: Exception: Error! Argument HttpMethod Expected: POST but was: GET
+12.12.2017 22:42:22 THRD=1 :: 
+*****
+Server started at port 49960

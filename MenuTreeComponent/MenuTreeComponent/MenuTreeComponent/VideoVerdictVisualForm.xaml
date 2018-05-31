@@ -1,0 +1,94 @@
+﻿<Controls:MetroWindow x:Class="MenuTreeComponent.VideoVerdictVisualForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:MenuTreeComponent"
+        mc:Ignorable="d"
+        Title="Формирование заключения" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#EEE"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TreeView x:Name="verdictTreeView" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="6" Margin="5">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Path=ChildNodes}">
+                    <Button Click="verdictTreeView_SelectedItemChanged">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                                <Rectangle.OpacityMask>
+                                    <VisualBrush Stretch="Fill" Visual="{Binding Icon}" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                            <TextBlock Margin="4 0 0 0" VerticalAlignment="Center" FontSize="18" Text="{Binding Name}" />
+                        </StackPanel>
+                    </Button>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded" Value="True"></Setter>
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+        <Button x:Name="verdictAddBtn" Grid.Row="0" Grid.Column="0" Margin="5" Click="verdictAddBtn_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="5 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Добавить" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="verdictEditBtn" Grid.Row="0" Grid.Column="1" Margin="5" IsEnabled="False" Click="verdictEditBtn_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="5 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="verdictRemoveBtn" Grid.Row="0" Grid.Column="2" Margin="5" IsEnabled="False" Click="verdictRemoveBtn_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_delete}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="5 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Удалить" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="okBtn" Grid.Row="0" Grid.Column="4" Margin="5" Click="okBtn_Click">ОК</Button>
+        <Button x:Name="cancelBtn" Grid.Row="0" Grid.Column="5" Margin="5" Click="cancelBtn_Click">Отмена</Button>
+    </Grid>
+</Controls:MetroWindow>

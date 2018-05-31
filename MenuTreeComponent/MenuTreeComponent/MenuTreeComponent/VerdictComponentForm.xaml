@@ -1,0 +1,44 @@
+﻿<Controls:MetroWindow x:Class="MenuTreeComponent.VerdictComponentForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:MenuTreeComponent"
+        mc:Ignorable="d"
+        Title="Компонент заключения: редактирование" Height="400" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#EEE"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center">Название компонента</TextBlock>
+        <TextBox x:Name="nameTextBox" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"></TextBox>
+        <Button x:Name="okBtn" Grid.Row="1" Grid.Column="2" Margin="5" Click="okBtn_Click">ОК</Button>
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center">Выберите тип компонента</TextBlock>
+        <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="finalRadioBtn" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center" GroupName="vcfGroup" IsChecked="True">Конечный компонент</RadioButton>
+                <RadioButton x:Name="branchRadioBtn" Grid.Row="1" Grid.Column="1" Margin="5" VerticalAlignment="Center" GroupName="vcfGroup">Пункт меню</RadioButton>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="isCorrectRadioBtn" Grid.Row="1" Grid.Column="1" Margin="5" VerticalAlignment="Center" GroupName="ansGroup" IsChecked="True">Правильно</RadioButton>
+                <RadioButton x:Name="isIncorrectRadioBtn" Grid.Row="1" Grid.Column="2" Margin="5" VerticalAlignment="Center" GroupName="ansGroup">Неправильно</RadioButton>
+            </StackPanel>
+        </StackPanel>
+
+        <Button x:Name="cancelBtn" Grid.Row="2" Grid.Column="2" Margin="5" Click="cancelBtn_Click">Отмена</Button>
+        
+    </Grid>
+</Controls:MetroWindow>

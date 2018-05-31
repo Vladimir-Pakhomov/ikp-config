@@ -1,0 +1,19 @@
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Debug\ServerApp.exe.config
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Debug\ServerApp.exe
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Debug\ServerApp.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.csprojResolveAssemblyReference.cache
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.exe
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\ServerApp.exe.config
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\ServerApp.exe
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\ServerApp.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.csprojResolveAssemblyReference.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.csproj.CoreCompileInputs.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.exe
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Debug\ServerApp.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\Tools.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Debug\Tools.pdb

@@ -1,0 +1,418 @@
+﻿<Controls:MetroWindow x:Class="MenuTreeComponent.TopicForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenuTreeComponent"
+        xmlns:listBoxBehavior="clr-namespace:ListBoxBehavior;assembly=Tools"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="Управление упражнениями" WindowState="Maximized" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_book}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Упражнения" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Button Grid.Row="0" Grid.Column="1" Margin="0 5 5 0" x:Name="topicsSaveBtn" Click="topicsSaveBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_save}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   FontSize="9"
+                   Text="Сохранить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="0" Grid.Column="2" Margin="0 5 5 0" x:Name="topicAddBtn" Click="topicAddBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   FontSize="9"
+                   Text="Добавить" />
+            </StackPanel>
+        </Button>
+        <ListBox Grid.Row="1" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" x:Name="topicsListBox" SelectionChanged="topicsListBox_SelectionChanged"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="9*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Name}" Grid.Row="0" Grid.Column="0" FontSize="16" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                        <Button Grid.Row="0" Grid.Column="1" x:Name="topicRemoveBtn" Click="topicRemoveBtn_Click">
+                            <Rectangle Width="10" Height="10" Margin="5">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource appbar_close}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </Button>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_app_favorite}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Название" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="5" Text="{Binding Name}" x:Name="topicNameTextBox" IsEnabled="False" FontSize="18" VerticalAlignment="Center"></TextBlock>
+        <Button Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="2" Margin="0 5 5 5" IsEnabled="False"
+                x:Name="editTopicNameBtn" Click="editTopicNameBtn_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="5 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <StackPanel Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_star}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Главный вопрос" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="5" Text="{Binding GeneralQuestion}" x:Name="topicMainQuestionTextBox" IsEnabled="False" FontSize="18" VerticalAlignment="Center"></TextBlock>
+        <Button Grid.Row="1" Grid.Column="9" Grid.ColumnSpan="2" Margin="0 5 5 5" IsEnabled="false"
+                x:Name="editTopicMainQuestionBtn" Click="editTopicMainQuestionBtn_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="5 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <StackPanel Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="1" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_medical_pulse}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Привязка заключения" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Button Grid.Row="2" Grid.Column="8" x:Name="conclusionAddBtn" IsEnabled="False" Margin="0 0 0 5" Click="conclusionAddBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Добавить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="9" Margin="0 0 0 5" x:Name="conclusionEditBtn" IsEnabled="False" Click="conclusionEditBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="10" Margin="0 0 5 5" x:Name="conclusionRemoveBtn" IsEnabled="False" Click="conclusionRemoveBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_delete}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Удалить" />
+            </StackPanel>
+        </Button>
+        <Border Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="4" CornerRadius="5" BorderThickness="3">
+            <Border.BorderBrush>
+                <SolidColorBrush Color="Black"></SolidColorBrush>
+            </Border.BorderBrush>
+        </Border>
+        <StackPanel Grid.Row="3" Grid.Column="3" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_question}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Вопросы" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Button Grid.Row="3" Grid.Column="4" Margin="0 5 0 0" x:Name="questionAddBtn" IsEnabled="False" Click="questionAddBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Добавить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="5" Margin="0 5 0 0" x:Name="questionEditBtn" IsEnabled="False" Click="questionEditBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="6" Margin="0 5 5 0" x:Name="questionRemoveBtn" IsEnabled="False" Click="questionRemoveBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_delete}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Удалить" />
+            </StackPanel>
+        </Button>
+        <ListBox Grid.Row="4" Grid.Column="3" Margin="5"  Grid.ColumnSpan="4" x:Name="questionsListBox" SelectionChanged="questionsListBox_SelectionChanged"
+                 listBoxBehavior:ListBoxBehavior.AutoScroll="True"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" FontSize="16" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Border Grid.Row="3" Grid.Column="7" Grid.RowSpan="2" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="3" CornerRadius="5">
+            
+        </Border>
+        <StackPanel Grid.Row="3" Grid.Column="7" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_book_list}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Материалы" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Button Grid.Row="3" Grid.Column="8" x:Name="resolverAddBtn" IsEnabled="False" Margin="0 5 0 0">
+            <i:Interaction.Behaviors>
+                <local:DropDownButtonBehavior />
+            </i:Interaction.Behaviors>
+            <Button.ContextMenu>
+                <ContextMenu HorizontalAlignment="Right">
+                    <MenuItem Header="Текст" x:Name="resolverTextAddBtn" Click="resolverTextAddBtn_Click"></MenuItem>
+                    <MenuItem Header="Картинка" x:Name="resolverImageAddBtn" Click="resolverImageAddBtn_Click"></MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Добавить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="9" Margin="0 5 0 0" x:Name="resolverEditBtn" IsEnabled="False" Click="resolverEditBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="10" Margin="0 5 5 0" x:Name="resolverRemoveBtn" IsEnabled="False" Click="resolverRemoveBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_delete}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Удалить" />
+            </StackPanel>
+        </Button>
+        <ListBox Grid.Row="4" Grid.Column="7" Margin="5" Grid.ColumnSpan="4" x:Name="resolversListBox" SelectionChanged="resolversListBox_SelectionChanged"
+                 listBoxBehavior:ListBoxBehavior.AutoScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" FontSize="16"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Border Grid.Row="5" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="3" CornerRadius="5">
+            
+        </Border>
+        <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_video_gallery}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Медиа" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Button Grid.Row="5" Grid.Column="4" x:Name="visualAddBtn" IsEnabled="False" Margin="0 5 0 0">
+            <i:Interaction.Behaviors>
+                <local:DropDownButtonBehavior />
+            </i:Interaction.Behaviors>
+            <Button.ContextMenu>
+                <ContextMenu HorizontalAlignment="Right">
+                    <MenuItem Header="Видео-пара" x:Name="visualVideoPairAddBtn" Click="visualVideoPairAddBtn_Click"></MenuItem>
+                    <MenuItem Header="Одиночное видео" x:Name="visualSingleVideoAddBtn" Click="visualSingleVideoAddBtn_Click"></MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_add}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Добавить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="5" Grid.Column="5" x:Name="visualEditBtn" Margin="0 5 0 0" IsEnabled="False" Click="visualEditBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_edit}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Изменить" />
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="5" Grid.Column="6" Margin="0 5 5 0" x:Name="visualRemoveBtn" IsEnabled="False" Click="visualRemoveBtn_Click">
+            <StackPanel Orientation="Vertical">
+                <Rectangle Width="10"
+                   Height="10"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_delete}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="0"
+                   VerticalAlignment="Center"
+                   Text="Удалить" />
+            </StackPanel>
+        </Button>
+        <Border Grid.Row="5" Grid.Column="7" Grid.RowSpan="2" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="3" CornerRadius="5">
+            
+        </Border>
+        <StackPanel Grid.Row="5" Grid.Column="7" Orientation="Horizontal" Margin="5">
+            <Rectangle Width="20" Height="20" Margin="5">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_information_circle}" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock Text="Инфо" Margin="4 0 0 0" FontSize="14" FontFamily="Segoe UI" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <TextBlock x:Name="mediaInfo" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="{Binding VisualContentTypeMessage}"></TextBlock>
+        <Button x:Name="previewBtn" Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="3" Margin="5" IsEnabled="False" Click="previewBtn_Click">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="15"
+                   Height="15"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_eye}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="ПРЕДВАРИТЕЛЬНЫЙ ПРОСМОТР" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</Controls:MetroWindow>

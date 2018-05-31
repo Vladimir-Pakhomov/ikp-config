@@ -1,0 +1,37 @@
+﻿<Controls:MetroWindow x:Class="MenuTreeComponent.SelectTopicsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:MenuTreeComponent"
+        mc:Ignorable="d"
+        Title="Выберите упражнения для добавления" Height="400" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#EEE"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center">Отметьте упражнения для добавления</TextBlock>
+        <ListBox Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="5" x:Name="listBox1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox IsChecked="{Binding Path=IsChecked, Mode=TwoWay}" FontSize="16" HorizontalAlignment="Left" Content="{Binding Path=Name}"></CheckBox>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Content="ОК" Grid.Row="1" Grid.Column="2" Margin="5" x:Name="okButton" Click="okButton_Click"></Button>
+        <Button Content="Отмена" Grid.Row="2" Grid.Column="2" Margin="5" x:Name="cancelButton" Click="cancelButton_Click"></Button>
+    </Grid>
+</Controls:MetroWindow>

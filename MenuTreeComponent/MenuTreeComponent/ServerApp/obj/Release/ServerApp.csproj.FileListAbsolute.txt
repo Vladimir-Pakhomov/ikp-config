@@ -1,0 +1,19 @@
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Release\ServerApp.exe.config
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Release\ServerApp.exe
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Release\ServerApp.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\bin\Release\Newtonsoft.Json.xml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\obj\Release\ServerApp.exe
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\obj\Release\ServerApp.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\ServerApp\obj\Release\ServerApp.csprojResolveAssemblyReference.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\ServerApp.exe.config
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\ServerApp.exe
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\ServerApp.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\Tools.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\Tools.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\bin\Release\Newtonsoft.Json.xml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Release\ServerApp.csprojResolveAssemblyReference.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Release\ServerApp.csproj.CoreCompileInputs.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Release\ServerApp.exe
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\ServerApp\obj\Release\ServerApp.pdb

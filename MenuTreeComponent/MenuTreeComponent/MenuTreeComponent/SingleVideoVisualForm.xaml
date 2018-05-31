@@ -1,0 +1,32 @@
+﻿<Controls:MetroWindow x:Class="MenuTreeComponent.SingleVideoVisualForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:MenuTreeComponent"
+        mc:Ignorable="d"
+        Title="Одиночное видео: редактирование" Height="400" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#EEE"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5">Видео</TextBlock>
+        <local:MediaPresenter x:Name="srcMediaElement" Background="Black" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="5"></local:MediaPresenter>
+        <CheckBox x:Name="isCorrectCheckBox" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Margin="5,0,5,0">Норма</CheckBox>
+        <Button x:Name="okBtn" Grid.Row="1" Grid.Column="3" Margin="5" Click="okBtn_Click">ОК</Button>
+        <Button x:Name="cancelBtn" Grid.Row="2" Grid.Column="3" Margin="5" Click="cancelBtn_Click">Отмена</Button>
+    </Grid>
+</Controls:MetroWindow>

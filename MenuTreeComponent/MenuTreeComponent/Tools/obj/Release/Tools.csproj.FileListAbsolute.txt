@@ -1,0 +1,11 @@
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\Tools\bin\Release\Tools.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\Tools\bin\Release\Tools.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\Tools\obj\Release\Tools.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\Tools\obj\Release\Tools.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\Tools\obj\Release\Tools.csprojResolveAssemblyReference.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\Tools\bin\Release\Tools.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\Tools\bin\Release\Tools.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\Tools\obj\Release\Tools.csprojResolveAssemblyReference.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\Tools\obj\Release\Tools.csproj.CoreCompileInputs.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\Tools\obj\Release\Tools.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\Tools\obj\Release\Tools.pdb

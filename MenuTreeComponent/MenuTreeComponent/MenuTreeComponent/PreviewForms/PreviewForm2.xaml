@@ -1,0 +1,54 @@
+﻿<Controls:MetroWindow x:Class="MenuTreeComponent.PreviewForms.PreviewForm2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:MenuTreeComponent"
+        mc:Ignorable="d"
+        Title="Предварительный просмотр упражнения" Height="600" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="TextResolverTemplate">
+            <TextBlock Text="{Binding Content}"/>
+        </DataTemplate>
+        <DataTemplate x:Key="ImageResolverTemplate">
+            <Image Source="{Binding Origin}" Width="40" Height="40"/>
+        </DataTemplate>
+        <local:ResolverPresenter x:Key="ResolverPresenter"></local:ResolverPresenter>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#EEE"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="generalQuestionTxt" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <local:MediaPresenter x:Name="media" Background="Black" Margin="5" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="3" IsSearchEnabled="False"></local:MediaPresenter>
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="normalBtn" Margin="5" IsEnabled="False" Click="normalBtn_Click">Норма</Button>
+        <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" x:Name="problemBtn" Margin="5" IsEnabled="False" Click="problemBtn_Click">Нарушение</Button>
+        <ListBox x:Name="questionsListBox" Grid.Row="5" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="5" SelectionChanged="questionsListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" FontSize="16" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox x:Name="resolversListBox" Grid.Row="5" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="5" SelectionChanged="resolversListBox_SelectionChanged"
+                 ItemTemplateSelector="{StaticResource ResolverPresenter}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"></ListBox>
+    </Grid>
+</Controls:MetroWindow>

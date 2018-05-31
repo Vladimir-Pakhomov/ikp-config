@@ -1,0 +1,109 @@
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\ImageResolverForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MainWindow.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\SelectTopicsWindow.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\SingleVideoVisualForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\TextResolverForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\VerdictComponentForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoPairVisualForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoVerdictVisualForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\App.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent_MarkupCompile.cache
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent_MarkupCompile.lref
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\MenuTreeComponent.exe.config
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\MenuTreeComponent.exe
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\MenuTreeComponent.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\Tools.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\Tools.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\TopicForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\ImageResolverForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MainWindow.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\SelectTopicsWindow.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\SingleVideoVisualForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\TextResolverForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\TopicForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\VerdictComponentForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoPairVisualForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoVerdictVisualForm.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.g.resources
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.Properties.Resources.resources
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.csproj.GenerateResource.Cache
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.exe
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MediaPresenter.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MediaPresenter.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.csprojResolveAssemblyReference.cache
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm1.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm2.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm3.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm1.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm2.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm3.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\ControlzEx.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\MahApps.Metro.dll
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\ControlzEx.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\MahApps.Metro.pdb
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\bin\Debug\MahApps.Metro.xml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\Resources\Icons.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PublicationsForm.g.cs
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\App.baml
+C:\Users\Home\Documents\Visual Studio 2015\Projects\MenuTreeComponent\MenuTreeComponent\obj\Debug\PublicationsForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\MenuTreeComponent.exe.config
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\MenuTreeComponent.exe
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\MenuTreeComponent.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\ControlzEx.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\MahApps.Metro.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\Tools.dll
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\ControlzEx.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\MahApps.Metro.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\MahApps.Metro.xml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\bin\Debug\Tools.pdb
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.csprojResolveAssemblyReference.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\Resources\Icons.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\ImageResolverForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MainWindow.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MediaPresenter.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm1.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm2.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm3.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PublicationsForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\SelectTopicsWindow.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\SingleVideoVisualForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\TextResolverForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\TopicForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\VerdictComponentForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoPairVisualForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoVerdictVisualForm.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\App.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent_MarkupCompile.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent_MarkupCompile.lref
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\App.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\ImageResolverForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MainWindow.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MediaPresenter.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm1.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm2.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PreviewForms\PreviewForm3.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\PublicationsForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\SelectTopicsWindow.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\SingleVideoVisualForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\TextResolverForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\TopicForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\VerdictComponentForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoPairVisualForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\VideoVerdictVisualForm.baml
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.g.resources
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.Properties.Resources.resources
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.csproj.GenerateResource.Cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.csproj.CoreCompileInputs.cache
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.exe
+C:\Users\Olga\Desktop\Институт\MenuTreeComponent\MenuTreeComponent\MenuTreeComponent\obj\Debug\MenuTreeComponent.pdb
